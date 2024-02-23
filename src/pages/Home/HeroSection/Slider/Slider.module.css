@@ -1,0 +1,17 @@
+.slider-container {
+    height: 91vh;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    .slider-container {
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 480px) {
+    .slider-container {
+        height: 88vh;
+    }
+}

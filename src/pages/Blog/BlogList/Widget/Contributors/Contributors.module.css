@@ -1,0 +1,14 @@
+.contributors {
+    display: flex;
+    align-items: center;
+}
+.contributor-team {
+    width: auto;
+    height: 48px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    margin-right: 16px;
+}
+.text-muted {
+    opacity: 0.5;
+}

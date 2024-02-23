@@ -1,0 +1,28 @@
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px 0px;
+}
+.content-align {
+    display: flex;
+    flex-direction: column;
+}
+.about-image {
+    width: 100%;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+}
+@media screen and (max-width: 768px) {
+    .about-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 480px) {
+
+}

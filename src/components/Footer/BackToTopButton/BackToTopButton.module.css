@@ -1,0 +1,11 @@
+.move-on-top-button {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    padding: 0px 8px;
+}
+@media screen and (max-width: 480px) {
+    .move-on-top-button {
+        display: none;
+    }
+}

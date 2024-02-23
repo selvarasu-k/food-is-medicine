@@ -1,0 +1,12 @@
+.team-lists {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+    .team-lists {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px 0px;
+    }
+}

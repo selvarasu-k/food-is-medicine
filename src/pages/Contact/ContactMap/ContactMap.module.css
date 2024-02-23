@@ -1,0 +1,37 @@
+.contact-map-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contact-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0px;
+}
+.contact-lists {
+    list-style-type: none;
+}
+.contact-lists li {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ecebea;
+}
+@media screen and (max-width: 768px) {
+    .contact-map-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px 0px;
+    }
+    .content-map-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px 0px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .content-map-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px 0px;
+    }
+}

@@ -1,0 +1,23 @@
+.widget {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+.widget-heading {
+    margin-bottom: 24px;
+}
+.widget > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0px;
+    list-style-type: none;
+}
+.sidebar-categories {
+    border-top: 1px solid #ecebea;
+}
+.tags-block {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 12px 12px !important;
+}

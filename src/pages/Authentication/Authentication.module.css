@@ -1,0 +1,22 @@
+.auth-image {
+    width: 400px;
+    margin-top: 36px;
+}
+.form-card-body {
+    padding: 24px;
+}
+.auth-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media screen and (max-width: 768px) {
+    .auth-image {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .auth-image {
+        width: 100%;
+    }
+}

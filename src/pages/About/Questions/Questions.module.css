@@ -1,0 +1,21 @@
+.questions-icon {
+    width: 96px;
+    height: 96px;
+}
+.questions-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.query-bg {
+    background-color: #d9ede8;
+}
+.content-width-extra-large {
+    width: 100%;
+    max-width: 720px;
+}
+.flex-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

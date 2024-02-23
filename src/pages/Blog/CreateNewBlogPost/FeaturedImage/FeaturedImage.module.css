@@ -1,0 +1,19 @@
+.browse-image {
+    padding: 24px;
+}
+.browse-image-label {
+    padding: 48px;
+    border: 1px solid #ecebea;
+    border-radius: 6px;
+    text-align: center;
+}
+.featured-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 6px;
+}
+.browse {
+    cursor: pointer;
+}

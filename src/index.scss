@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Zilla+Slab&display=swap');
+
+// Colors
+
+// Theme Colors
+$primary-1: #068466;
+$primary-2: #FC9F5B;
+$primary-3: #001E42;
+
+// Grays
+$gray-1: #222525;
+$gray-2: #62636B;
+$gray-3: #ECEBEA;
+$gray-4: #F8F6F4;
+
+// Feedback
+$success: #57A773;
+$warning: #291e15;
+$error: #ED6A5E;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+// Typography
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: $gray-1;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+h1 {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1;
+    color: $gray-1;
+    margin-bottom: 24px;
+}
+h2 {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 42px;
+    color: $gray-1;
+    margin-bottom: 24px;
+}
+h3 {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: $gray-1;
+    margin-bottom: 16px;
+}
+h4 {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: $gray-1;
+    margin-bottom: 12px;
+}
+h5 {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $gray-1;
+    margin-bottom: 12px;
+}
+h6 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $gray-1;
+    margin-bottom: 8px;
+}
+.large-heading {
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 500;
+    color: $gray-1;
+}
+.large-heading-line-height {
+    line-height: 68px;
+}
+.medium-heading {
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 40px;
+    color: $gray-1;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 24px;
+}
+.small-heading {
+    font-family: 'Zilla Slab', sans-serif;
+    font-weight: 500;
+    font-size: 32px;    
+    line-height: 38px;
+    color: $gray-1;
+    margin-bottom: 16px;
+}
+.subheading {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.h6-small {
+    font-size: 16px;
+    line-height: 24px;
+}
+.text-large {
+    font-size: 18px;
+    line-height: 28px;
+}
+.text-small {
+    font-size: 14px;
+    line-height: 20px;
+}
+.text-center {
+    text-align: center;
+}
+.text-caps {
+    margin-right: -0.25em;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+.text-muted {
+    opacity: 0.5;
+}
+.logo {
+    width: 60px;
+    padding-top: 10px;
+}
+div {
+    font-family: 'DM Sans', sans-serif;
+}
+.section {
+    position: relative;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    z-index: 1;
+}
+.section-title-wide {
+    max-width: 720px;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto;
+    text-align: center;
+}
+.section-subtitle {
+    max-width: 512px;
+    margin: 0 auto;
+}
+.section-title {
+    max-width: 612px;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto;
+    text-align: center;
+}
+.no-bottom-space {
+    margin-bottom: 0px;
+}
+.bg-gray-4 {
+    background-color: $gray-4;
+}
+.bg-gray-3 {
+    background-color: $gray-3;
+}
+.text-primary-1 {
+    color: $primary-1;
+}
+.text-primary-2 {
+    color: $primary-2;
+}
+.bg-primary-1 {
+    background-color: $primary-1;
+}
+.bg-primary-2 {
+    background-color: $primary-2;
+}
+.bg-primary-3 {
+    background-color: $primary-3;
+}
+.row-split-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 36px 0px;
+}
+.content-width-small {
+    width: 400px;
+}
+.content-width-medium {
+    width: 100%;
+    max-width: 506px;
+}
+.content-width-large {
+    width: 100%;
+    max-width: 612px;
+}
+.button-width {
+    width: 100%;
+}
+.shadow-small {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transform: translate(0px, -12px);
+    text-decoration: none;
+}
+.card-border {
+    border: 1px solid #ecebea;
+}
+.opacity {
+    opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+    .section {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+    .section-title-wide {
+        margin-bottom: 60px;
+    }
+    .large-heading-line-height {
+        line-height: 60px;
+    }
+    .logo {
+        padding-top: 0px;
+    }
+    .row-split-content {
+        flex-wrap: wrap;
+        gap: 48px 0px;
+    }
+    .content-width-small {
+        max-width: 100%;
+    }
+    .content-width-medium {
+        width: 100%;
+    }
+    .content-width-large {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-family: 'Zilla Slab', sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 42px;
+        color: $gray-1;
+        margin-bottom: 16px;
+    }
+    .logo {
+        width: 50px;
+        padding-top: 8px;
+    }
+    .section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .large-heading {
+        font-size: 40px;
+        line-height: 42px;
+        margin-bottom: 16px;
+    }
+    .large-heading-line-height {
+        line-height: 42px;
+    }
+    .section-title-wide {
+        margin-bottom: 48px;
+    }
+    .text-large {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .subheading {
+        margin-bottom: 12px;
+    }
+    .row-split-content {
+        flex-wrap: wrap;
+        gap: 36px 0px;
+    }
+    .content-width-small {
+        max-width: 100%;
+    }
+    .content-width-medium {
+        width: 100%;
+    }
+    .content-width-large {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

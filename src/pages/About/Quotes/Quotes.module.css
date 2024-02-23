@@ -1,0 +1,36 @@
+.row-quotes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content-width-extra-large {
+    width: 100%;
+    max-width: 720px;
+}
+.quotes-block {
+    margin-bottom: 24px;
+}
+.quotes-poeter {
+    display: flex;
+    justify-content: center;
+    gap: 0px 18px;
+}
+.poeter {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+.about-poeter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.poeter-name {
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+    .quotes-text {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

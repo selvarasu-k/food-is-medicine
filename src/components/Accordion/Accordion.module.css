@@ -1,0 +1,36 @@
+.questions-card:hover {
+    transform: none;
+    translate: none;
+}
+.questions-body {
+    padding: 24px;
+}
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.expandable-heading {
+    margin-bottom: 0px;
+    transition: color 200ms ease;
+} 
+.expandable-arrow.rotate {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 300ms ease;
+}
+.expandable-arrow.not-rotate {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: 300ms ease;
+}
+.expandable-text {
+    margin-top: 24px;
+}
+.expandable-text.show {
+    display: block;
+}
+.expandable-text.hide {
+    display: none;
+}

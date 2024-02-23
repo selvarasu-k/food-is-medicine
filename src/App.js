@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import RootLayout from './pages/RootLayout';
+import Error from './pages/Error';
 import './App.css';
+import Team from './pages/Team/Team';
+import Blog from './pages/Blog/Blog';
+import Contact from './pages/Contact/Contact';
+import Authentication from './pages/Authentication/Authentication';
+import Post from './pages/Blog/BlogList/Post/Post';
+import CreateNewBlogPost from './pages/Blog/CreateNewBlogPost/CreateNewBlogPost';
+import ForgotPassword from './pages/Authentication/ForgotPassword/ForgotPassword';
+import EditProfile from './pages/EditProfile/EditProfile';
+import Pricing from './pages/Pricing/Pricing';
+import TeamList from './pages/Team/TeamList/TeamList';
+
+  const router = createBrowserRouter([
+      {
+        path:'/', 
+        element: <RootLayout/>,
+        errorElement: <Error/>,
+        children: [
+          { path:'/', element: <Home/> },
+          { path:'/about', element: <About/> },
+          { path:'/team', element: <Team/> },
+          { path:'/blog', element: <Blog/> },
+          { path:'/teamlist', element: <TeamList/> },
+          { path:'/blog/post', element: <Post/> },
+          { path:'/contact', element: <Contact/> },
+          { path:'/auth', element: <Authentication/> },
+          { path:'/reset', element: <ForgotPassword/> },
+          { path:'/edit', element: <EditProfile/> },
+          { path:'/blog/newblogpost', element: <CreateNewBlogPost/> },
+          { path:'/pricing', element: <Pricing/> }
+        ]
+      },
+  ]);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Js
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router}/>
 }
 
 export default App;

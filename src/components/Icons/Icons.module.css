@@ -1,0 +1,20 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    opacity: 0.75;
+    border-radius: 50%;
+    background-color: #ecebea;
+}
+.social-icons:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+.icons {
+    width: 16px;
+    height: 16px;
+}

@@ -1,0 +1,11 @@
+.recent-post {
+    display: flex;
+    align-items: center;
+}
+.post-image {
+    width: auto;
+    height: 48px;
+    object-fit: cover;
+    object-position: 50% 30%;
+    margin-right: 16px;
+}

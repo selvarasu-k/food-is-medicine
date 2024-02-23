@@ -1,0 +1,19 @@
+.newsletter {
+    width: 506px;
+}
+.newsletter-form {
+    margin-top: 36px;
+}
+.hide-news-letter {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .newsletter {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .newsletter {
+        max-width: 100%;
+    }
+}

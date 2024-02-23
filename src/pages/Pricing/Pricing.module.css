@@ -1,0 +1,32 @@
+.pricing-section-align {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0px 24px;
+    width: 100%;
+}
+.hide-card-label {
+    display: none;
+}
+.remove-top-border-radius {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.price-button-bgcolor {
+    border-color: #f8f6f4;
+    background-color: #f8f6f4;
+    color: #222525;
+}
+.price-button-bgcolor:hover {
+    border-color: #ecebea;
+    background-color: #ecebea;
+    color: #222525;
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.02);
+}
+@media screen and (max-width: 768px) {
+    .pricing-section-align {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px 0px;
+    }
+}

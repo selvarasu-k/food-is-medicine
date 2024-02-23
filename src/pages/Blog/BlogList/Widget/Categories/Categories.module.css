@@ -1,0 +1,9 @@
+.categories-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.categories-links {
+    padding: 12px 0px;
+    border-bottom: 1px solid #ecebea;
+}

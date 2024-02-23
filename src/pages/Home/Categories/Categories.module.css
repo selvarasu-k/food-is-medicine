@@ -1,0 +1,30 @@
+.row-parent-category {
+    max-width: 786px;
+    margin: 0 auto;
+}
+.row-parent-category {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+}
+.row-category {
+    width: 32%;
+}
+.card-transparent {
+    background-color: transparent;
+}
+.card-transparent:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .row-parent-category {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px 0px;
+    }
+    .row-category {
+        width: 75%;
+    }
+}

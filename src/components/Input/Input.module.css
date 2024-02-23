@@ -1,0 +1,32 @@
+label {
+    display: block;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.form-label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+input {
+    display: block;
+    width: 100%;
+    color: #333333;
+    outline: 0;
+    background-color: #ffffff;
+}
+.form-input {
+    height: 48px;
+    margin-bottom: 0px;
+    padding: 10px 20px;
+    border: 1px solid #ecebea;
+    border-radius: 5px;
+    transition: border-color 200ms ease;
+    font-size: 16px;
+    line-height: 24px;
+}
+.form-input:focus {
+    border-color: #068466;
+}

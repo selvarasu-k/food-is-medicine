@@ -1,0 +1,27 @@
+.profile-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0px;
+    width: 13%;
+}
+.profile-sidebar a {
+    color: #068466;
+}
+.profile-sidebar a:hover {
+    color: #FC9F5B;
+}
+.profile-sidebar a.active {
+    color: #FC9F5B;
+}
+.profile-sidebar a.delete-account {
+    color: #c4221e;
+}
+.profile-sidebar {
+    list-style-type: none;
+}
+@media screen and (max-width: 480px) {
+    .profile-sidebar {
+        width: 100%;
+        text-align: center;
+    }
+}

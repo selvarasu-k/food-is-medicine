@@ -1,0 +1,31 @@
+.card-image-head {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 27%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.card-body {
+    padding: 24px;
+}
+.card-foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+.post-meta-left {
+    display: flex;
+    align-items: center;
+    gap: 0px 12px;
+}
+.post-meta-right {
+    display: flex;
+    align-items: center;
+    gap: 0px 5px;
+}
+@media screen and (max-width: 480px) {
+    .card-image-head {
+        height: 230px;
+    }
+}

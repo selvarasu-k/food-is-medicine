@@ -1,0 +1,29 @@
+.row-parent-blog {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+}
+.row-blog {
+    width: 32%;
+}
+.card-hover:hover {
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .row-parent-blog {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 24px;
+        width: 100%;
+    }
+    .row-blog {
+        width: 48.3%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .row-blog {
+        width: 96%;
+    }
+}

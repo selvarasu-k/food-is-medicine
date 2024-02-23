@@ -1,0 +1,27 @@
+.profile-icon {
+    display: flex;
+    align-items: center;
+    gap: 0px 12px;
+}
+.profile-icon,
+.profile-icon svg g {
+    fill: #068466;
+    color: #068466;
+}
+.profile-icon:hover,
+.profile-icon:hover svg g {
+    fill: #FC9F5B;
+    color: #FC9F5B;
+    cursor: pointer;
+}
+.profile-button {
+    border: 1px solid #068466;
+    border-radius: 6px;
+    padding: 8px 6px;
+    background: transparent;
+    gap: 0px 8px;
+}
+.profile-button:hover {
+    border: 1px solid #FC9F5B;
+    cursor: pointer;
+}
