@@ -18,11 +18,11 @@ import TeamList from './pages/Team/TeamList/TeamList';
 
   const router = createBrowserRouter([
       {
-        path:'/', 
+        path:'/food-is-medicine', 
         element: <RootLayout/>,
         errorElement: <Error/>,
         children: [
-          { path:'/', element: <Home/> },
+          { path:'/food-is-medicine', element: <Home/> },
           { path:'/about', element: <About/> },
           { path:'/team', element: <Team/> },
           { path:'/blog', element: <Blog/> },
