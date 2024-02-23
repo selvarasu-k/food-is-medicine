@@ -48,7 +48,7 @@ const Header = () => {
                 <Container className={classes["navigation-container"]}>
                     <div className={classes["header-nav"]}>
                         <div className={classes["website-logo-block"]}>
-                            <NavLink>
+                            <NavLink to="/food-is-medicine">
                                 <img src={logo} className="logo" alt="logo" />
                             </NavLink>
                         </div>
@@ -79,7 +79,7 @@ const Header = () => {
                                             <NavLink to="#">
                                                 <Help text="Help & Support?"/>
                                             </NavLink>
-                                            <NavLink to="/">
+                                            <NavLink to="#">
                                                 <Logout onClick={() => setIsOpen(true)} text="Logout" />
                                                 {isOpen && <Modal onClose={() => setIsOpen(false)}
                                                                   text="Are you sure you want to log out?"

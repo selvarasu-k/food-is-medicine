@@ -19,7 +19,7 @@ const Footer = (props) => {
             <div className={classes["footer-row-3"]}>
                 <div className={classes["footer-logo-block"]}>
                     <div className={classes["footer-logo"]}>
-                        <NavLink to="/">
+                        <NavLink to="/food-is-medicine">
                             <img src={logo} className="logo" alt="logo" />
                         </NavLink>
                     </div>
@@ -37,7 +37,7 @@ const Footer = (props) => {
                 <nav>
                         <ul className={`${classes["list"]} ${classes["footer-links-align"]}`}>
                             <li className={classes.listitem}>
-                                <Link to="/">Home</Link>
+                                <Link to="/food-is-medicine">Home</Link>
                             </li>
                             <li>
                                 <Link to="/about">About</Link>

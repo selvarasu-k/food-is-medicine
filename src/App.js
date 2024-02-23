@@ -18,7 +18,7 @@ import TeamList from './pages/Team/TeamList/TeamList';
 
   const router = createBrowserRouter([
       {
-        path:'/food-is-medicine', 
+        path:'/', 
         element: <RootLayout/>,
         errorElement: <Error/>,
         children: [
