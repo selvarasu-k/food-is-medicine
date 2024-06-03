@@ -3,7 +3,7 @@
     align-items: center;
 }
 .contributor-team {
-    width: auto;
+    width: 48px;
     height: 48px;
     object-fit: cover;
     object-position: 50% 30%;

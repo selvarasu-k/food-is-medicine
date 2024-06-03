@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import authimage from '../../Images/Login/Authentication.jpeg';
 import Container from '../../components/Container/Container';
 import Card from '../../components/Card/Card';
@@ -6,15 +7,22 @@ import Login from './Login/Login';
 import Register from './Register/Register';
 import classes from './Authentication.module.css';
 import '../../index.scss';
-
+import { authLoader } from '../../util/auth';
 
 const Authentication = () => {
 
-  const [currentForm, setCurrentForm] = useState('login');
+    const navigate = useNavigate();
+    
+    const authId = authLoader();
 
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  }
+    useEffect(() => {
+      if (authId) {
+        navigate("/food-is-medicine");
+      }
+    }, [authId, navigate]);
+
+  const [searchParams] = useSearchParams();
+  const currentForm = searchParams.get('mode') === 'register';
 
   return (
     <section className="section bg-gray-4">
@@ -33,7 +41,7 @@ const Authentication = () => {
                     <Card className="shadow-small">
                         <div className={classes["form-card-body"]}>
                                 {
-                                    currentForm === 'login' ? <Login onFormSwitch={toggleForm}/> : <Register onFormSwitch={toggleForm}/>
+                                    currentForm ? <Register onFormSwitch="login"/> : <Login onFormSwitch="register"/>
                                 }
                         </div>
                     </Card>

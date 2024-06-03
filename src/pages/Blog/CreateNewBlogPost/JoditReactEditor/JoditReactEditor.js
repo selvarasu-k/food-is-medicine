@@ -10,7 +10,7 @@ const JoditReactEditor = ({id, name}) => {
     uploader: {
       insertImageAsBase64URI: true
     },
-    placeholder: "Start typing..."
+    placeholder: "Start typing...",
   }
 
   return (

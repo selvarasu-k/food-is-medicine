@@ -65,6 +65,10 @@
 @media screen and (max-width: 480px) {
     .slides {
         height: 40vh;
+        z-index: 1;
+    }
+    .slide-image {
+        z-index: 2;
     }
     .slide-content {
         top: 98%;

@@ -17,20 +17,21 @@ const Questions = () => {
                 <div className={classes["content-width-extra-large"]}>
                     <div className={classes["flex-rows"]}>
                         <Accordion question="What is food medicine"
-                                   answer="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                                           sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                                   answer="Food is medicine is a traditional (Siddha medicine) medicine in South India.
+                                           As food medicine, Food Medicines cure diseases."
                         />
                         <Accordion question="Why food is medicine"
-                                   answer="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                                           sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                                   answer="Food is Medicine is a concept that reaffirms this connection,
+                                           recognizing that access to high-quality nourishment is essential for well-being."
                         />
                         <Accordion question="What is siddha medicine"
-                                   answer="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                                           sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                                   answer="Siddha medicine is one of the oldest systems of medicine
+                                           (traditional medicine) originating in southern rural India."
                         />
                         <Accordion question="What is traditional medicine"
-                                   answer="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                                           sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                                   answer="Traditional medicine comprises medical aspects of traditional
+                                           knowledge that developed over generations. The sum total of the knowledge,
+                                           skills based on the theories."
                         />
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 .post-hero-image {
     width: 612px;
+    height: 350px;
+    object-fit: cover;
 }
 .row-post-center {
     display: flex;
@@ -37,6 +39,7 @@
 @media screen and (max-width: 480px) {
     .post-hero-image {
         width: 612px;
+        height: 250px;
         max-width: 100%;
     }
     .blog-post-heading {

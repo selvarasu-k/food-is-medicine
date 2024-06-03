@@ -1,14 +1,17 @@
 import React from 'react';
-import avatar1 from '../../../Images/Team/avatar1.png';
-import avatar2 from '../../../Images/Team/avatar2.png';
-import avatar3 from '../../../Images/Team/avatar3.png';
 import Container from '../../../components/Container/Container';
 import Card from '../../../components/Card/Card';
 import BlogContent from './BlogContent';
 import classes from './Blog.module.css';
 import '../../../index.scss';
+import { NavLink, useOutletContext } from 'react-router-dom';
 
 const Blog = () => {
+
+    const context = useOutletContext();
+  
+    const sortArticlesData = context.orderArticle?.slice(0,3);
+
   return (
     <section className="section bg-gray-4">
         <Container>
@@ -17,25 +20,24 @@ const Blog = () => {
                     Thoughts from our team
                 </h3>
                 <div className="text-large section-subtitle">
-                    Combine sections from Ollie's vast component library and create beautiful, detailed pages.
+                    We were build  beautiful blog articles with our friendly team, you can read and enjoy it!                </div>
                 </div>
-            </div>
             <ul className={classes["row-parent-blog"]}>
-                <li className={classes["row-blog"]}>
-                        <Card className={classes["card-hover"]}>
-                            <BlogContent avatar={avatar1}/>
-                        </Card>
-                </li>
-                <li className={classes["row-blog"]}>
-                        <Card className={classes["card-hover"]}>
-                            <BlogContent avatar={avatar2}/>
-                        </Card> 
-                </li>
-                <li className={classes["row-blog"]}>
-                        <Card className={classes["card-hover"]}>
-                            <BlogContent avatar={avatar3}/>
-                        </Card>
-                </li>
+                {sortArticlesData?.map(article => {
+                    return (
+                            <li className={classes["row-blog"]} key={article.id}>
+                                <NavLink to={`post/${article.id}`}>
+                                    <Card className={classes["card-hover"]}>
+                                        <BlogContent post_image={article.post_image}
+                                                     post_title={article.post_title}
+                                                     post_category={article.post_categories}
+                                                     author={article.author}
+                                        />
+                                    </Card>
+                                </NavLink>
+                            </li>
+                    )
+                })}
             </ul>
         </Container>
     </section>

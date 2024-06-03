@@ -4,3 +4,8 @@
 .sub-heading {
     color: #ffffff;
 }
+@media screen and (max-width: 480px) {
+    .sub-heading {
+        margin: 0px 5px;
+    }
+}

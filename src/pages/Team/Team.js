@@ -2,23 +2,22 @@ import React from 'react';
 import SubHeader from '../../components/SubHeader/SubHeader';
 import Container from '../../components/Container/Container';
 import Avatar from '../../components/Avatar/Avatar';
-import avatar1 from '../../Images/Team/avatar1.png';
-import avatar2 from '../../Images/Team/avatar2.png';
-import avatar3 from '../../Images/Team/avatar3.png';
-import avatar4 from '../../Images/Team/avatar4.png';
+import dummyprofile from '../../Images/Team/dummy-profile-pic.jpeg';
 import twitter from '../../Images/Social-Icons/twitter.svg';
 import linkedin from '../../Images/Social-Icons/linkedin.svg';
 import instagram from '../../Images/Social-Icons/instagram.svg';
 import classes from './Team.module.css';
 import '../../index.scss';
-import Footer from '../../components/Footer/Footer';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useOutletContext } from 'react-router-dom';
 
 const Team = () => {
+
+  const context = useOutletContext();
+
   return (
     <>
       <SubHeader heading="Team"
-                 subheading="Copy and paste any of these multi-purpose sections to your page."
+                 subheading="Thoughts from our friendly team."
       />
       <section className='section bg-gray-4'>
         <Container>
@@ -29,65 +28,30 @@ const Team = () => {
             </div>
             <div className={classes["team"]}>
                 <ul className={classes["team-items"]}>
-                  <NavLink to="/teamlist">
-                      <Avatar avatar={avatar1} 
-                              twitter={twitter} 
-                              linkedin={linkedin} 
-                              instagram={instagram}
-                              name="Pramod Gautam"
-                              place="Nagpur in India"
-                      />
-                  </NavLink>
-                  <NavLink to="/teamlist">
-                      <Avatar avatar={avatar2} 
-                              twitter={twitter} 
-                              linkedin={linkedin} 
-                              instagram={instagram}
-                              name="Bhavana Nilkanth Nikam"
-                              place="Nashik in India"
-                        />
-                  </NavLink>
-                  <NavLink to="/teamlist">
-                      <Avatar avatar={avatar3} 
-                              twitter={twitter} 
-                              linkedin={linkedin} 
-                              instagram={instagram}
-                              name="Sachin Kale"
-                              place="Nagpur in India"
-                        />
-                  </NavLink>
-                  <NavLink to="/teamlist">
-                      <Avatar avatar={avatar4} 
-                              twitter={twitter} 
-                              linkedin={linkedin} 
-                              instagram={instagram}
-                              name="Binita Kumari"
-                              place="Banka in India"
-                        />
-                  </NavLink>
-                  <NavLink to="/teamlist">
-                      <Avatar avatar={avatar2} 
-                              twitter={twitter} 
-                              linkedin={linkedin} 
-                              instagram={instagram}
-                              name="Bhavana Nilkanth Nikam"
-                              place="Nashik in India"
-                        />
-                  </NavLink>
-                  <NavLink to="/teamlist">
-                      <Avatar avatar={avatar3} 
-                              twitter={twitter} 
-                              linkedin={linkedin} 
-                              instagram={instagram}
-                              name="Sachin Kale"
-                              place="Nagpur in India"
-                        />
-                  </NavLink>
+                {context.isLoading && <h4>Fetching users data...</h4>}
+                {!context.isLoading &&context.usersDataLength && <h4>No users are available...</h4>}
+                {!context.usersDataLength && context.filteredUsersData?.map(user => {
+                      return (
+                          <NavLink to={`${user.id}`} key={user.id}>
+                              <Avatar avatar={user.profile.profile_picture !== '' ? user.profile.profile_picture : dummyprofile} 
+                                      twitter={twitter} 
+                                      linkedin={linkedin} 
+                                      instagram={instagram}
+                                      name={
+                                        user.profile.firstname !== "" &&
+                                        user.profile.lastname !== ""
+                                          ? user.profile.firstname + " " + user.profile.lastname
+                                          : user.full_name
+                                      }
+                                      role={user.role}
+                              />
+                          </NavLink>
+                      )}
+                  )}
                 </ul>
             </div>
         </Container>
       </section>
-      <Footer/>
     </>
   )
 }

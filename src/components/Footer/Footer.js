@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Container from '../Container/Container';
 import Icons from '../Icons/Icons';
 import logo from '../../Images/fim-logo.png';
@@ -12,18 +12,18 @@ import classes from './Footer.module.css';
 import '../../index.scss';
 import BackToTopButton from './BackToTopButton/BackToTopButton';
 
-const Footer = (props) => {
+const Footer = () => {
   return (
-    <footer className={props.className}>
+    <footer className='bg-gray-3'>
         <Container>
             <div className={classes["footer-row-3"]}>
                 <div className={classes["footer-logo-block"]}>
                     <div className={classes["footer-logo"]}>
-                        <NavLink to="/food-is-medicine">
+                        <NavLink to="">
                             <img src={logo} className="logo" alt="logo" />
                         </NavLink>
                     </div>
-                    <p className="text-large">Build your website with over 100 interface blocks.</p>
+                    <p className="text-large">As food medicine, Food Medicines cure diseases.</p>
                 </div>
                 <ul className={classes["footer-social-icons"]}>
                     <Icons icons={twitter}/>
@@ -37,24 +37,24 @@ const Footer = (props) => {
                 <nav>
                         <ul className={`${classes["list"]} ${classes["footer-links-align"]}`}>
                             <li className={classes.listitem}>
-                                <Link to="/food-is-medicine">Home</Link>
+                                <NavLink to="">Home</NavLink>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <NavLink to="about">About</NavLink>
                             </li>
                             <li>
-                                <Link to="/team">Team</Link>
+                                <NavLink to="team">Team</NavLink>
                             </li>
                             <li>
-                                <Link to="/blog">Blog</Link>
+                                <NavLink to="blog">Blog</NavLink>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <NavLink to="contact">Contact</NavLink>
                             </li>
                         </ul>
                     </nav>
                     <div className="text-small">
-                        <div>© Company • Powered by <Link to="#">Food is medicine</Link></div>
+                        <div>© Company • Powered by <NavLink to="#">Food is medicine</NavLink></div>
                     </div>
             </div>
         </Container>

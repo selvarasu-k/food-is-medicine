@@ -11,7 +11,7 @@ const Avatar = (props) => {
                     <img src={props.avatar} className={classes["team-images"]} alt="avatar-images" />
                     <div className={classes["text-center"]}>
                         <h6 className="h6-small">{props.name}</h6>
-                        <div>{props.place}</div>
+                        <div>{props.role}</div>
                     </div>
                 </div>
                 <ul className={classes["social-icons-list"]}>

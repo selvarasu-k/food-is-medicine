@@ -1,32 +1,30 @@
 import React from 'react';
 import Card from '../../../../components/Card/Card';
+import dummyimage from '../../../../Images/FeaturedImage/dummy-image.jpeg';
 import classes from './BlogCard.module.css';
-import { NavLink } from 'react-router-dom';
 
 const BlogCard = (props) => {
   return (
-    <NavLink to="/blog/post" className={classes["blog-post-link"]}>
         <li>
             <Card>
                 <div className={classes["blog-card-body"]}>
-                    <img src={props.blogpicture} className={classes["blog-card-image"]} alt="blog-card" />
+                    <img src={props.blogpicture ? props.blogpicture : dummyimage} className={classes["blog-card-image"]} alt="blog-card" />
                     <div className={classes["blog-card-content"]}>
-                        <h4>How to manage work-life balance at home</h4>
+                        <h4>{props.blogtitle}</h4>
                         <div className={classes["post-content-list"]}>
                             <div className={classes["post-meta-left"]}>
-                                <div className="text-small text-primary-1">Lifestyle</div>
-                                <div className="text-small">Sep 19, 2019</div>
+                                <div className="text-small text-primary-1">{props.blogcategory}</div>
+                                <div className="text-small">{props.blogdate}</div>
                             </div>
                             <div className={classes["post-meta-right"]}>
                                 <div className="text-small">by</div>
-                                <div className="text-small">Pramod Gautam</div>
+                                <div className="text-small">{props.author}</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </Card>
         </li>
-    </NavLink>
   )
 }
 

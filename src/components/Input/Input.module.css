@@ -6,9 +6,17 @@ label {
     flex-direction: column;
     margin-bottom: 12px;
 }
+.align-input-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .form-label {
     margin-bottom: 8px;
     font-weight: 500;
+}
+.form-error {
+    color: #e43d2f;
 }
 input {
     display: block;

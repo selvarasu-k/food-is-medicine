@@ -55,9 +55,6 @@ header {
     align-items: center;
     gap: 24px 0px;
 }
-.dropdown-login {
-    display: none;
-}
 .dropdown-profile {
     display: flex;
     flex-direction: column;
@@ -65,9 +62,6 @@ header {
     align-items: center;
     gap: 12px 0px;
     width: 100%;
-}
-.dropdown-profile {
-    display: flex;
 }
 .dropdown-profile a {
     border-bottom: 1px solid #e0e0e0;
@@ -94,6 +88,10 @@ header {
     margin-bottom: 0;
 }
 .avatar-cirlce {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-right: 5px;
 }
 .shop-cart {

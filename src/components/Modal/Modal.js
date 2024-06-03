@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 import classes from './Modal.module.css';
 import Card from '../Card/Card';
 
-const Modal = ({ onClose, text, close, okay }) => {
+const Modal = ({ onClose, text, close, okay, onClick }) => {
   return createPortal(
         <div className={classes.modal}>
             <div className={classes["modal-center-align"]}>
@@ -12,7 +12,7 @@ const Modal = ({ onClose, text, close, okay }) => {
                     <h4 className={classes["modal-heading"]}>{text}</h4>
                     <div className={classes["modal-buttons-block"]}>
                         <Button className={classes["modal-button"]} onClick={onClose}>{close}</Button>
-                        <Button className={classes["modal-button"]}>{okay}</Button>
+                        <Button className={classes["modal-button"]} onClick={onClick}>{okay}</Button>
                     </div>
                 </Card>
             </div>

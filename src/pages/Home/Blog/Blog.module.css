@@ -1,11 +1,15 @@
 .row-parent-blog {
-    width: 100%;
     display: flex;
+    align-items: stretch;
     gap: 24px;
     list-style-type: none;
+    width: 100%;
 }
 .row-blog {
     width: 32%;
+}
+.card-hover {
+    height: 100%;
 }
 .card-hover:hover {
     cursor: pointer;

@@ -13,11 +13,11 @@ const SliderContent = ({ activeIndex, imageSlider }) => {
                     <div className={classes["slide-content"]}>
                         <h2 className={classes['slide-title']}>{slide.title}</h2>
                         <h4 className={classes['slide-text']}>{slide.description}</h4>
-                        <Button>
-                          <NavLink to="/blog">
-                              Learn More
-                          </NavLink>
-                        </Button>
+                        <NavLink to={slide.category}>
+                          <Button>
+                                Learn More
+                          </Button>
+                        </NavLink>
                     </div>
             </div>
         ))}

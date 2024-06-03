@@ -36,8 +36,12 @@
     border-radius: 6px;
     padding: 16px;
 }
-.hide-edit-button {
+/* .hide-edit-button {
     display: none;
+} */
+.show-profile-data {
+    margin-left: 16px;
+    margin-top: 6px;
 }
 .profile-row {
     display: flex;
@@ -67,6 +71,9 @@
     margin-bottom: 20px;
 }
 .profile-input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0px;
     margin-left: 36px;
 }
 .input-row {
@@ -77,10 +84,13 @@
     gap: 0px 24px;
 }
 .input-row > div {
-    width: 50%;
+    width: 100%;
 }
 .input-row-height {
     height: 94px;
+}
+.input-add-space {
+    margin-bottom: 12px;
 }
 label {
     display: block;
@@ -116,10 +126,39 @@ textarea {
 .text-area-input:focus {
     border-color: #068466;
 }
+.edit-image {
+    position: relative;
+}
+.edit-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.profile-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+}
+.set-icon {
+    position: absolute;
+    left: 59px;
+    bottom: 0px;
+}
+.hide-profile-image {
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .input-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
         width: 100%;
     }
@@ -133,8 +172,33 @@ textarea {
         height: 183px;
         gap: 65px 0px;
     }
+    .show-profile-data {
+        margin-left: 0px;
+        margin-top: 6px;
+    }
 }
 @media screen and (max-width: 480px) {
+    .input-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 8px 0px;
+    }
+    .input-row > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .input-row-height {
+        height: 183px;
+        gap: 65px 0px;
+    }
+    .input-row-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .profile-card {
         flex-direction: column;
         gap: 36px 0px;

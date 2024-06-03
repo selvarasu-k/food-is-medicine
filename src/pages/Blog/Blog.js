@@ -2,16 +2,21 @@ import React from 'react';
 import NewBlog from './NewBlog/NewBlog';
 import BlogSidebar from './BlogList/BlogSidebar';
 import NewsLetter from './NewsLetter/NewsLetter';
-import Footer from '../../components/Footer/Footer';
 import '../../index.scss';
+import SubHeader from '../../components/SubHeader/SubHeader';
+import { useOutletContext } from 'react-router-dom';
 
 const Blog = () => {
+
+  const context = useOutletContext();
+
   return (
     <>
-      <NewBlog/>
-      <BlogSidebar/>
+      {context.haveadd ? <NewBlog/> : <SubHeader heading="Blog"
+        subheading="Learn a lot about food is medicine like traditional, siddha medicines."
+      />}
+      <BlogSidebar />
       <NewsLetter/>
-      <Footer className="bg-gray-4"/>
     </>
   )
 }

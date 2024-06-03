@@ -8,6 +8,9 @@
 .blog-category-links {
     list-style-type: none;
 }
+.blog-category-links li {
+    cursor: pointer;
+}
 .sidebar-layout {
     display: flex;
     justify-content: space-between;
