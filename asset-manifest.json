@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/food-is-medicine/static/css/main.2884071c.css",
-    "main.js": "/food-is-medicine/static/js/main.7ab9792b.js",
+    "main.css": "/food-is-medicine/static/css/main.23ce015f.css",
+    "main.js": "/food-is-medicine/static/js/main.479b9def.js",
     "static/js/787.636e631a.chunk.js": "/food-is-medicine/static/js/787.636e631a.chunk.js",
     "static/media/Foods for facial beauty.jpg": "/food-is-medicine/static/media/Foods for facial beauty.5fc23449c083295d01a0.jpg",
     "static/media/Siddha Medicine.jpeg": "/food-is-medicine/static/media/Siddha Medicine.098f0b5c59056abdc926.jpeg",
@@ -9,9 +9,9 @@
     "static/media/siddha-medicine.jpeg": "/food-is-medicine/static/media/siddha-medicine.c2a66f40733b4b0bdeb3.jpeg",
     "static/media/fim-logo.png": "/food-is-medicine/static/media/fim-logo.2b3d39c456a320a0f149.png",
     "static/media/Authentication.jpeg": "/food-is-medicine/static/media/Authentication.3993347a81850f2947a3.jpeg",
-    "static/media/work-life-balance.jpeg": "/food-is-medicine/static/media/work-life-balance.4361e59881554e63ed1c.jpeg",
     "static/media/thiruvalluvar.jpeg": "/food-is-medicine/static/media/thiruvalluvar.26acac3a9b787187bbf8.jpeg",
     "static/media/newsletter.jpeg": "/food-is-medicine/static/media/newsletter.4bc65ac1f0707044e5be.jpeg",
+    "static/media/error_image.svg": "/food-is-medicine/static/media/error_image.5c3ab594bf172bf68ac14d42df385231.svg",
     "static/media/dummy-image.jpeg": "/food-is-medicine/static/media/dummy-image.368b895418fe78153dc1.jpeg",
     "static/media/questions.svg": "/food-is-medicine/static/media/questions.cd61faedbecd7fac40f8fac86a009245.svg",
     "static/media/shopping-cart-store.svg": "/food-is-medicine/static/media/shopping-cart-store.b7023dd99b940a951de49e948d2fec38.svg",
@@ -26,12 +26,12 @@
     "static/media/icon-check.svg": "/food-is-medicine/static/media/icon-check.5dee0d850cabe81720e75ef12e8e42aa.svg",
     "static/media/icon-chevron-up.svg": "/food-is-medicine/static/media/icon-chevron-up.a3de47c4efcb76685097b8c14009d461.svg",
     "static/media/icon-chevron-right.svg": "/food-is-medicine/static/media/icon-chevron-right.2c68827902ff20e30e4fc2285ca8ad84.svg",
-    "main.2884071c.css.map": "/food-is-medicine/static/css/main.2884071c.css.map",
-    "main.7ab9792b.js.map": "/food-is-medicine/static/js/main.7ab9792b.js.map",
+    "main.23ce015f.css.map": "/food-is-medicine/static/css/main.23ce015f.css.map",
+    "main.479b9def.js.map": "/food-is-medicine/static/js/main.479b9def.js.map",
     "787.636e631a.chunk.js.map": "/food-is-medicine/static/js/787.636e631a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2884071c.css",
-    "static/js/main.7ab9792b.js"
+    "static/css/main.23ce015f.css",
+    "static/js/main.479b9def.js"
   ]
 }
