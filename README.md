@@ -1,70 +1,183 @@
-# Getting Started with Create React App
+# Food is Medicine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+A simple blog application built with React.js to be managed by admins and read by users.
 
-## Available Scripts
+It's a role-based blog application. Admins can create, read, update, and delete operations, and also users can only be allowed to read blog posts.
 
-In the project directory, you can run:
+Categories and tags filter the blog posts.
 
-### `npm start`
+Users can create, read, update, and delete user auth data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Note**: This project UI referral link is added below 
+link 1 - https://ollie-template.webflow.io/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+link 2 - https://ollie-template.webflow.io/blog/blog-2
 
-### `npm test`
+## Table of Contents
+- [Features](#features)
+- [Tools and Technologies Used](#tools-and-technologies-used)
+- [Deploying a React App* to GitHub Pages](#deploying-a-react-app*-to-github-pages)
+- [Installation and Setup](#installation-and-setup)
+- [Connect with backend API via JSON server](#connect-with-backend-api-via-json-server)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact Information](#contact-information)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- Verify the user's role-based authentication.
 
-### `npm run build`
+- Admins and users can add, edit, view, and delete user's auth data operations.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Filtered and showed admins data only.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Only admins can add, edit, view, and delete each blog post-operation. And users can view the blog posts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Categories and tags filter the blog posts.
 
-### `npm run eject`
+- While authenticating admins (while logged-in admins), we show the create, edit, and delete buttons from every blog post.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Contact** - Ask anything about Food is medicine with our friendly team!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Subscribers** - Subscribe and get great curated articles every week!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Responsive design.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tools and Technologies Used
+- **React.js**: JavaScript library for building user interfaces
+- **React Router**: Library for routing in React applications
+- **useOutletContext**: State management tool in the context of React Router
+- **JSON Server**: RESTful API using a JSON file as the database
+- **React Toastify**: Pop-up messages displaying toast notifications
+- **Sass**: To write and maintain styles for websites globally
+- **Prettier**: Code formatter
 
-## Learn More
+## Deploying a React App* to GitHub Pages
+    We have followed along with this [link](https://github.com/gitname/react-gh-pages) tutorial - we'll end up with a new React app—hosted on GitHub Pages.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation and Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+- Node.js (v20 or higher)
+- npm (v10 or higher)
 
-### Code Splitting
+### Steps
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/selvarasu-k/food-is-medicine.git
+    cd food-is-medicine
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-### Analyzing the Bundle Size
+3. **Start the development server:**
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Open the application in your browser:**
+    ```bash
+    local: http://localhost:3000/food-is-medicine
+    remote: https://selvarasu-k.github.io/food-is-medicine/
+    ```
 
-### Making a Progressive Web App
+## Connect with backend API via JSON server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Steps
+1. **Set up the JSON Server:**
+    ```bash
+    npm install json-server
+    ```
 
-### Advanced Configuration
+2. **Create a db.json file:**
+    ```
+    Create a file named db.json in your project directory. 
+    This file will contain your mock database
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Start the development server:**
+    ```bash
+    json-server --watch db.json --port 5000
+    ```
 
-### Deployment
+4. **Open the application in your browser (localhost):**
+    ```bash
+    local: http://localhost:5000/users or articles or roleaccess or others
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+5. **Open the application in your browser (remote via onrender.com):**
+    
+    - **OnRender (Render.com)**: is a cloud platform that provides various hosting and deployment services for web applications, APIs, and other server-side applications.
 
-### `npm run build` fails to minify
+    - **Automatic Deployments**: Render can automatically deploy your applications whenever you push changes to your Git repository (GitHub, GitLab, or Bitbucket).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - **Connect Your Repository**: Connect your GitHub, GitLab, or Bitbucket repository to Render.
+
+    - **Connect Localhost Server**: Your local development environment can interact with the deployed API by using the provided URL. Update any necessary configuration in your local server to point to the remote API endpoint on Render.
+
+    ```bash
+    remote: https://json-server-deployment-uepg.onrender.com/
+    ```
+
+## Usage
+
+Here explained how to use the project after setting it up.
+
+**Note**: Admins (Founder, Co-Founder, Developer, Designer) data directly added to the backend JSON API server.
+**RoleAccess** - Admins - Founder, Co-Founder, Developer, Designer, Users.
+
+### Users CRUD operations:
+ 
+These operations are sent and fetched by JSON API with POST, GET, PUT or PATCH, and DELETE requests.
+
+- **Register page** - While entering the user (If don't have an account) click the register link. Fill the valid user details and click the register button. It's redirecting to login page.
+
+- **Login page** - Enter your valid email and password and click the login button. You will get notify log in successfully. It's redirecting to Home page.
+
+- **Edit page** - Hover on the dropdown then click the edit profile then edit and save user data or if you don't need an account then click delete account button and confirm.
+
+ - **Team page** - filtered and showed admins data list only except the user's data.
+
+### Blog posts CRUD operations:
+
+These operations are sent and fetched by JSON API with POST, GET, PUT or PATCH, and DELETE requests.
+
+**Blog** - While entering admins, let's show the new blog post button. Then click the New link. It's redirecting to newblogpost page then fill in the Create post form details and click the Publish button. It's redirecting to the blog page.
+
+You can see the list of every blog post data on the blog page.
+
+Click any of the blog posts, and then you can read the articles.
+
+**Blog - Post page** - While entering admin to every blog post then you can see the edit, and delete buttons. Clicking the edit button to update the particular blog post form details then save. and also click the delete button to confirm delete the blog posts accessed by admins. but, the users can only read the articles and can't see the edit, delete buttons.
+
+**Home page** - You can see the listed every section like the team, blog posts, and post categories list.
+
+### Blog - In the sidebar,
+
+Filtered and showed the recent three blog posts.
+
+You can see the four admin's data lists.
+
+You can see the blog post categories list.
+
+**Categories link** - Listed every filtered blog post based on the categories.
+
+You can see the blog post tags list.
+
+**Tags link** - Listed every filtered blog post based on the tags.
+
+## Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature`).
+6. Open a pull request.
+
+## Contact Information
+- **Email**: selvanewversion@gmail.com
+- **GitHub**: [your-github-username](https://github.com/selvarasu-k)
+- **LinkedIn**: [your-linkedin-profile](https://www.linkedin.com/in/selvarasu-k-9408a112a/)
